@@ -8,7 +8,7 @@ export const siteConfig = {
   availability: "Disponible pour de nouvelles opportunités",
   social: {
     github: "https://github.com/helionux",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/deoule-allah-madjitoloum-heliodore",
     twitter: "https://twitter.com",
   },
 }
