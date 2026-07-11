@@ -89,14 +89,14 @@ export const projects = [
       "Conception d'une API Backend pour une de réseau sociale, qui prends en charge l'authentification par email, et par OTP, publication des images, likes et commentaire.",
     tags: ["Node.js", "MongoDB", "Express.js", "Cloudinary", "Render"],
     github: "https://github.com",
-    live: "https://example.com",
+    live: null,
     featured: false,
   },
   {
     title: "Bizflow",
     description:
       "Une application de gestion de et centralistion des factures, cette plateforme génère également les facture en format pdf ainsi qu'un rapport détailler sous forme de tableur.",
-    tags: ["Next.js", "Typescript", "Shadcn", "MongoDb", "Vercel"],
+    tags: ["Next.js", "Typescript", "Shadcn ui", "MongoDb", "Vercel"],
     github: "https://github.com",
     live: null,
     featured: false,
@@ -106,7 +106,7 @@ export const projects = [
     description:
       "Intégration de la maquette du site web de la communauté dotNet Cammeroun.",
     tags: ["Next.js", "Tailwind", "Vercel"],
-    github: "https://github.com",
+    github: "https://github.com/Dot_Net_WebSite-app",
     live: "https://dot-net-web-site-app.vercel.app/",
     featured: false,
   },
@@ -115,8 +115,17 @@ export const projects = [
     description:
       "Réfonte du site de prise de rendez-vous et de soins infirmiers à domicile.",
     tags: ["CMS", "Hostinger"],
-    github: "https://github.com",
+    github: "",
     live: "https://pascaldev.be",
+    featured: false,
+  },
+  {
+    title: "Dashboard",
+    description:
+      "Conception d'un dashboard, intelligent avec intégration des graphique et suivis de personnels",
+    tags: ["Next.js", "shadcn ui", "Typescript", "Vercel"],
+    github: "https://github.com",
+    live: "https://dashboard-next-js-shadcn-ui.vercel.app/",
     featured: false,
   },
 ]

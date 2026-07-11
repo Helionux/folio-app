@@ -114,10 +114,10 @@ export function ChartSkill() {
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
         <div className="flex gap-2 leading-none font-medium">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+          Apprendre les compétences pour ne pas se perdre sur le marché<TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          Showing total stats for the last 6 months
+         Les stats de mes 1 ans d&apos;experiences en dévéloppement web.
         </div>
       </CardFooter>
     </Card>

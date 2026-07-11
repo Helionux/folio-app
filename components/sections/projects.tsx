@@ -47,7 +47,7 @@ export function Projects() {
                   {project.tags.map((tag) => (
                     <li
                       key={tag}
-                      className="rounded-md bg-muted px-2 py-0.5 font-mono text-[0.65rem] text-muted-foreground"
+                      className="rounded-md bg-muted px-2 py-0.5 font-mono text-[0.9rem] text-muted-foreground border hover:text-primary hover:border-primary transition-colors duration-300 cursor-pointer"
                     >
                       {tag}
                     </li>
