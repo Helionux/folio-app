@@ -1,14 +1,13 @@
-import type { CSSProperties } from "react"
 
 import { FadeIn } from "@/components/ui/fade-in"
 import { SectionHeading } from "@/components/ui/section-heading"
-import { hardSkills, softSkills } from "@/lib/data"
-import { cn } from "@/lib/utils"
+import {  softSkills } from "@/lib/data"
+import { ChartSkill } from "./ChartSkill"
 
 export function Skills() {
   return (
     <section id="competences" className="scroll-mt-20 py-24">
-      <div className="mx-auto max-w-5xl px-6">
+      <div className="mx-auto max-w-7xl px-6">
         <FadeIn>
           <SectionHeading
             label="Compétences"
@@ -45,7 +44,7 @@ export function Skills() {
               </h3>
             </FadeIn>
             <div className="space-y-4">
-              {hardSkills.map((skill, i) => (
+              {/* {hardSkills.map((skill, i) => (
                 <FadeIn key={skill.name} delay={150 + i * 60}>
                   <div>
                     <div className="mb-1.5 flex items-center justify-between">
@@ -70,7 +69,9 @@ export function Skills() {
                     </div>
                   </div>
                 </FadeIn>
-              ))}
+              ))} */}
+
+              <ChartSkill />
             </div>
           </div>
         </div>
