@@ -25,6 +25,8 @@ const syne = Syne({
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 
+const siteUrl = "https://heliodore-pholio.vercel.app/"
+
 export const metadata: Metadata = {
   title: `${siteConfig.name} — ${siteConfig.title}`,
   description: siteConfig.tagline,
@@ -45,7 +47,23 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${siteConfig.name} — Portfolio`,
     description: siteConfig.tagline,
+    url: siteUrl,
     type: "website",
+    locale: "fr_FR",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Heliodore Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.name} | ${siteConfig.title}`,
+    description: "Découvrez mon portfolio, mes projets et mes compétences.",
+    images: ["/og-image.png"],
   },
   verification: {
     google: "AbCdEfGh123456789",
