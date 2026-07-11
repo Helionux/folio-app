@@ -107,7 +107,16 @@ export const projects = [
       "Intégration de la maquette du site web de la communauté dotNet Cammeroun.",
     tags: ["Next.js", "Tailwind", "Vercel"],
     github: "https://github.com",
-    live: "https://example.com",
+    live: "https://dot-net-web-site-app.vercel.app/",
+    featured: false,
+  },
+  {
+    title: "CareLane",
+    description:
+      "Réfonte du site de prise de rendez-vous et de soins infirmiers à domicile.",
+    tags: ["CMS", "Hostinger"],
+    github: "https://github.com",
+    live: "https://pascaldev.be",
     featured: false,
   },
 ]
