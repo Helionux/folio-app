@@ -27,7 +27,9 @@ export function Hero() {
           src="/helionux-saitama.png"
           alt=""
           fill
+          sizes="(max-width: 768px) 100vw, 40vw"
           priority
+          quality={80}
           className="object-cover object-center opacity-60"
         />
 
@@ -120,6 +122,8 @@ export function Hero() {
               width={700}
               height={850}
               priority
+              sizes="(max-width: 768px) 100vw, 40vw"
+              quality={80}
               className="rounded-full object-cover shadow-md shadow-red-500 dark:shadow-amber-300"
             />
           </FadeIn>

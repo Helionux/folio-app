@@ -35,12 +35,20 @@ export const metadata: Metadata = {
     "Next.js",
     "Node.js",
     "portfolio",
+    "Tchad",
+    "N'Djamena",
+    "Helionux",
+    "un",
+    "dev",
   ],
   authors: [{ name: siteConfig.name }],
   openGraph: {
     title: `${siteConfig.name} — Portfolio`,
     description: siteConfig.tagline,
     type: "website",
+  },
+  verification: {
+    google: "AbCdEfGh123456789",
   },
 }
 
