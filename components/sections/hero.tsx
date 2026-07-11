@@ -4,8 +4,8 @@ import { GitHubIcon, LinkedInIcon } from "@/components/icons/social"
 import { Button } from "@/components/ui/button"
 import { FadeIn } from "@/components/ui/fade-in"
 import { siteConfig } from "@/lib/data"
-import Link from "next/link"
 import Image from "next/image"
+import Link from "next/link"
 
 export function Hero() {
   return (
@@ -22,7 +22,19 @@ export function Hero() {
         <div className="animate-glow absolute -bottom-1/4 left-0 h-100 w-100 rounded-full bg-primary/5 blur-3xl [animation-delay:2s]" />
       </div>
 
-      <div className="relative mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-6 py-20">
+      <div className="absolute inset-0 md:block lg:hidden xl:hidden">
+        <Image
+          src="/helionux-saitama.png"
+          alt=""
+          fill
+          priority
+          className="object-cover object-center opacity-60"
+        />
+
+        <div className="absolute inset-0 bg-background/45" />
+      </div>
+
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-6 py-20">
         <div>
           <FadeIn delay={0}>
             <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-muted/50 px-3 py-1 text-xs text-muted-foreground backdrop-blur-sm">
@@ -60,11 +72,13 @@ export function Hero() {
               <Button asChild size="lg">
                 <Link href="#projets">Voir mes projets</Link>
               </Button>
+
               <Button asChild variant="outline" size="lg">
                 <Link href="#contact">Me contacter</Link>
               </Button>
             </div>
           </FadeIn>
+
           <FadeIn delay={500}>
             <div className="mt-10 flex items-center gap-4">
               <Link
@@ -76,6 +90,7 @@ export function Hero() {
               >
                 <GitHubIcon className="size-6" />
               </Link>
+
               <Link
                 href={siteConfig.social.linkedin}
                 target="_blank"
@@ -85,6 +100,7 @@ export function Hero() {
               >
                 <LinkedInIcon className="size-6" />
               </Link>
+
               <Link
                 href={`mailto:${siteConfig.email}`}
                 className="text-muted-foreground transition-colors hover:text-foreground"
@@ -95,17 +111,20 @@ export function Hero() {
             </div>
           </FadeIn>
         </div>
-        <div className="hidden h-full w-full md:block">
+
+        <div className="hidden h-full w-full items-center justify-center sm:hidden md:hidden lg:block xl:block">
           <FadeIn delay={600}>
             <Image
               src="/helionux-saitama.png"
-              alt="Photo"
-              height={850}
+              alt="Photo de Helionux"
               width={700}
-              className="object-cover rounded-full shadow-md dark:shadow-amber-300 shadow-red-500"
+              height={850}
+              priority
+              className="rounded-full object-cover shadow-md shadow-red-500 dark:shadow-amber-300"
             />
           </FadeIn>
         </div>
+
         <FadeIn
           delay={700}
           className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 md:block"
@@ -118,6 +137,7 @@ export function Hero() {
             <span className="text-[0.65rem] tracking-widest uppercase">
               Explorer
             </span>
+
             <ArrowDown className="size-4 animate-bounce" />
           </Link>
         </FadeIn>
