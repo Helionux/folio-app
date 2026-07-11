@@ -98,11 +98,11 @@ export function Hero() {
         <div className="h-full w-full">
           <FadeIn delay={600}>
             <Image
-              src="/helionux.png"
+              src="/vector-h.svg"
               alt="Photo"
               height={850}
               width={700}
-              className="rounded-full object-cover shadow-md dark:shadow-amber-400 shadow-red-500"
+              className=" object-cover"
             />
           </FadeIn>
         </div>
