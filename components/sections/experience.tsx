@@ -8,7 +8,7 @@ export function Experience() {
       id="experiences"
       className="scroll-mt-20 border-y border-border/40 bg-muted/30 py-24"
     >
-      <div className="mx-auto max-w-5xl px-6">
+      <div className="mx-auto max-w-7xl px-6">
         <FadeIn>
           <SectionHeading
             label="Expériences"

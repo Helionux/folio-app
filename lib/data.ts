@@ -138,13 +138,6 @@ export const experiences = [
     ],
   },
   {
-    role: "Formation en Dévéloppement web",
-    company: "MUSS Digital",
-    period: "2024 — 2025",
-    description: "Apprentissage des notions de bases du dévéloppement web.",
-    technologies: ["HTML5", "CSS3", "JS", "Git", "React"],
-  },
-  {
     role: "Meta Full-Stack Developper from Scratch",
     company: "Meta — Coursera",
     period: "2025 — 2026",
@@ -168,5 +161,12 @@ export const experiences = [
     description:
       "Apprentissage avancé du dévélopement backend avec Nodejs et Express et l'architecture MVC et de l'opération CRUD.",
     technologies: ["Node.js", "Express.js", "MVC", "MongoDB"],
+  },
+  {
+    role: "Formation en Dévéloppement web",
+    company: "MUSS Digital",
+    period: "2024 — 2025",
+    description: "Apprentissage des notions de bases du dévéloppement web.",
+    technologies: ["HTML5", "CSS3", "JS", "Git", "React"],
   },
 ]
