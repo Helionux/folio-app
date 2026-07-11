@@ -23,12 +23,31 @@ export const navLinks = [
 ] as const
 
 export const softSkills = [
-  { name: "Communication", description: "Vulgariser des sujets techniques auprès de tous les profils." },
-  { name: "Esprit d'équipe", description: "Collaboration agile, code review constructive et entraide." },
-  { name: "Résolution de problèmes", description: "Approche analytique face aux défis complexes." },
-  { name: "Adaptabilité", description: "Apprentissage rapide de nouvelles technologies et contextes." },
-  { name: "Sens du détail", description: "Qualité du code, UX soignée et attention aux edge cases." },
-  { name: "Autonomie", description: "Prise d'initiative et livraison fiable en remote ou sur site." },
+  {
+    name: "Communication",
+    description: "Vulgariser des sujets techniques auprès de tous les profils.",
+  },
+  {
+    name: "Esprit d'équipe",
+    description: "Collaboration agile, code review constructive et entraide.",
+  },
+  {
+    name: "Résolution de problèmes",
+    description: "Approche analytique face aux défis complexes.",
+  },
+  {
+    name: "Adaptabilité",
+    description: "Apprentissage rapide de nouvelles technologies et contextes.",
+  },
+  {
+    name: "Sens du détail",
+    description: "Qualité du code, UX soignée et attention aux edge cases.",
+  },
+  {
+    name: "Autonomie",
+    description:
+      "Prise d'initiative et livraison fiable en remote ou sur site.",
+  },
 ]
 
 export const hardSkills = [
@@ -43,45 +62,50 @@ export const hardSkills = [
 ]
 
 export const techStack = [
-  { category: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux", "Zustand", "Framer Motion"] },
+  {
+    category: "Frontend",
+    items: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux",
+      "Zustand",
+      "Framer Motion",
+    ],
+  },
   { category: "Backend", items: ["Node.js", "Express", "NestJS", "REST API"] },
   { category: "Base de données", items: ["MongoDB", "PostgreSQL", "Mongoose"] },
-  { category: "Outils & Déploiement", items: ["Docker", "Git", "GitHub Actions", "Vercel", "Figma"] },
+  {
+    category: "Outils & Déploiement",
+    items: ["Docker", "Git", "GitHub Actions", "Vercel", "Figma"],
+  },
 ]
 
 export const projects = [
   {
-    title: "TaskFlow",
+    title: "API Backend Social media",
     description:
-      "Application de gestion de projets collaborative en temps réel avec tableaux Kanban, notifications et intégration calendrier.",
-    tags: ["React", "Node.js", "MongoDB", "Socket.io"],
+      "Conception d'une API Backend pour une de réseau sociale, qui prends en charge l'authentification par email, et par OTP, publication des images, likes et commentaire.",
+    tags: ["Node.js", "MongoDB", "Express.js", "Cloudinary", "Render"],
     github: "https://github.com",
     live: "https://example.com",
-    featured: true,
+    featured: false,
   },
   {
-    title: "ShopVerse",
+    title: "Bizflow",
     description:
-      "Plateforme e-commerce headless avec panier persistant, paiement Stripe et tableau de bord administrateur.",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Prisma"],
-    github: "https://github.com",
-    live: "https://example.com",
-    featured: true,
-  },
-  {
-    title: "DevMetrics",
-    description:
-      "Dashboard analytique pour équipes dev : métriques DORA, couverture de tests et suivi des déploiements.",
-    tags: ["TypeScript", "Express", "Chart.js", "Docker"],
+      "Une application de gestion de et centralistion des factures, cette plateforme génère également les facture en format pdf ainsi qu'un rapport détailler sous forme de tableur.",
+    tags: ["Next.js", "Typescript", "Shadcn", "MongoDb", "Vercel"],
     github: "https://github.com",
     live: null,
     featured: false,
   },
   {
-    title: "Portfolio v3",
+    title: ".DotNet",
     description:
-      "Site personnel minimaliste avec mode sombre, animations au scroll et formulaire de contact fonctionnel.",
-    tags: ["Next.js", "Tailwind", "Resend", "Vercel"],
+      "Intégration de la maquette du site web de la communauté dotNet Cammeroun.",
+    tags: ["Next.js", "Tailwind", "Vercel"],
     github: "https://github.com",
     live: "https://example.com",
     featured: false,
@@ -95,7 +119,14 @@ export const experiences = [
     period: "2026 — Présent",
     description:
       "Création d'interfaces responsives pour des clients variés. Optimisation SEO, accessibilité mobile-first et animations fluides, ainsi la création des application Full-stack.",
-    technologies: ["React", "Next.js", "Express.js","Supabase","Tailwind CSS", "Framer Motion"],
+    technologies: [
+      "React",
+      "Next.js",
+      "Express.js",
+      "Supabase",
+      "Tailwind CSS",
+      "Framer Motion",
+    ],
   },
   {
     role: "Formation en Dévéloppement web",

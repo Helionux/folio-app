@@ -35,10 +35,10 @@ export function Experience() {
                   <div className="rounded-xl border border-border/60 bg-background/60 p-6 backdrop-blur-sm transition-all duration-300 hover:border-primary/30 hover:shadow-sm">
                     <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
                       <div>
-                        <h3 className="font-heading text-xl font-medium">
+                        <h3 className="font-syne text-2xl font-medium">
                           {exp.role}
                         </h3>
-                        <p className="text-sm text-primary">{exp.company}</p>
+                        <p className="text-md font-mono text-primary">{exp.company}</p>
                       </div>
                       <time className="font-mono text-xs text-muted-foreground">
                         {exp.period}

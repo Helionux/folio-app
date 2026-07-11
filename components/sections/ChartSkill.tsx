@@ -25,18 +25,18 @@ import {
 export const description = "A radial chart with a label"
 
 const chartData = [
-  { browser: "Architecture REST", visitors: 85, fill: "var(--color-primary)" },
-  { browser: "React/Next.js", visitors: 95, fill: "var(--color-primary)" },
-  { browser: "Node.js/Express", visitors: 88, fill: "var(--color-primary)" },
-  { browser: "MongoDB/PostgreSQL", visitors: 85, fill: "var(--color-primary)" },
-  { browser: "TypeScript", visitors: 92, fill: "var(--color-primary)" },
-  { browser: "Test & CI/CD", visitors: 88, fill: "var(--color-primary)" },
+  { browser: "Architecture REST", stats: 85, fill: "var(--color-primary)" },
+  { browser: "React/Next.js", stats: 95, fill: "var(--color-primary)" },
+  { browser: "Node.js/Express", stats: 88, fill: "var(--color-primary)" },
+  { browser: "MongoDB & PostgreSQL", stats: 85, fill: "var(--color-primary)" },
+  { browser: "TypeScript", stats: 92, fill: "var(--color-primary)" },
+  { browser: "Test & CI/CD", stats: 88, fill: "var(--color-primary)" },
   {
     browser: "Docker & Déploiement",
-    visitors: 78,
+    stats: 78,
     fill: "var(--color-primary)",
   },
-  { browser: "Performance web", visitors: 90, fill: "var(--color-primary)" },
+  { browser: "Performance web", stats: 90, fill: "var(--color-primary)" },
 ]
 
 const chartConfig = {
@@ -56,7 +56,7 @@ const chartConfig = {
     color: "var(--chart-2)",
   },
   mongodb: {
-    label: "MongoDB/PostgreSQL",
+    label: "MongoDB & PostgreSQL",
     color: "var(--chart-3)",
   },
   test: {
@@ -105,8 +105,8 @@ export function ChartSkill() {
                 content={<ChartTooltipContent indicator="line" />}
               />
 
-              <Bar dataKey="visitors" fill="var(--primary)" radius={8}>
-                <LabelList dataKey="visitors" position="right" />
+              <Bar dataKey="stats" fill="var(--primary)" radius={8}>
+                <LabelList dataKey="stats" position="right" />
               </Bar>
             </BarChart>
           </ResponsiveContainer>
@@ -117,7 +117,7 @@ export function ChartSkill() {
           Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 months
+          Showing total stats for the last 6 months
         </div>
       </CardFooter>
     </Card>
