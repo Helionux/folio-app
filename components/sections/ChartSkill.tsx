@@ -106,7 +106,7 @@ export function ChartSkill() {
         </ChartContainer>
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
-        <div className="flex font-medium">
+        <div className="flex gap-1 font-medium">
           Apprendre les compétences pour ne pas se perdre sur le marché
           <TrendingUp className="h-4 w-4" />
         </div>
