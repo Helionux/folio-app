@@ -15,7 +15,7 @@ export function Skills() {
           />
         </FadeIn>
 
-        <div className="grid gap-12 lg:grid-cols-2">
+        <div className="w-full grid gap-12 lg:grid-cols-2">
           <div>
             <FadeIn delay={100}>
               <h3 className="mb-6 font-mono text-xs tracking-widest text-muted-foreground uppercase">

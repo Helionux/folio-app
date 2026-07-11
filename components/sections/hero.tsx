@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <section
       id="accueil"
-      className="relative flex min-h-svh items-center border-b overflow-hidden pt-16"
+      className="relative flex min-h-svh items-center overflow-hidden border-b pt-16"
     >
       <div
         className="pointer-events-none absolute inset-0 opacity-40 dark:opacity-25"
@@ -74,7 +74,7 @@ export function Hero() {
                 className="text-muted-foreground transition-colors hover:text-foreground"
                 aria-label="GitHub"
               >
-                <GitHubIcon className="size-6"/>
+                <GitHubIcon className="size-6" />
               </Link>
               <Link
                 href={siteConfig.social.linkedin}
@@ -83,7 +83,7 @@ export function Hero() {
                 className="text-muted-foreground transition-colors hover:text-foreground"
                 aria-label="LinkedIn"
               >
-                <LinkedInIcon className="size-6"/>
+                <LinkedInIcon className="size-6" />
               </Link>
               <Link
                 href={`mailto:${siteConfig.email}`}
@@ -95,14 +95,14 @@ export function Hero() {
             </div>
           </FadeIn>
         </div>
-        <div className="h-full w-full">
+        <div className="hidden h-full w-full md:block">
           <FadeIn delay={600}>
             <Image
-              src="/vector-h.svg"
+              src="/helionux-saitama.png"
               alt="Photo"
               height={850}
               width={700}
-              className=" object-cover"
+              className="object-cover rounded-full shadow-md dark:shadow-amber-300 shadow-red-500"
             />
           </FadeIn>
         </div>

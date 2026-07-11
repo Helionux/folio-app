@@ -120,7 +120,7 @@ export const projects = [
     featured: false,
   },
   {
-    title: "Dashboard",
+    title: "Dashboard intelligent ",
     description:
       "Conception d'un dashboard, intelligent avec intégration des graphique et suivis de personnels",
     tags: ["Next.js", "shadcn ui", "Typescript", "Vercel"],
