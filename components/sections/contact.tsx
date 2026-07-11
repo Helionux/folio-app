@@ -1,13 +1,14 @@
 "use client"
 
 import * as React from "react"
-import { MapPin, Send } from "lucide-react"
+import { Mail, MapPin, Send } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { FadeIn } from "@/components/ui/fade-in"
 import { SectionHeading } from "@/components/ui/section-heading"
 import { siteConfig } from "@/lib/data"
 import { cn } from "@/lib/utils"
+import Link from "next/link"
 
 export function Contact() {
   const [status, setStatus] = React.useState<"idle" | "sent">("idle")
@@ -36,12 +37,13 @@ export function Contact() {
                 <p className="font-mono text-xs tracking-widest text-muted-foreground uppercase">
                   Email
                 </p>
-                <a
+                <Link
                   href={`mailto:${siteConfig.email}`}
-                  className="mt-1 block text-sm transition-colors hover:text-primary"
+                  className="mt-1 flex items-center gap-1.5 text-sm transition-colors hover:text-primary"
                 >
+                  <Mail className="size-3.5 shrink-0" />
                   {siteConfig.email}
-                </a>
+                </Link>
               </div>
 
               <div>

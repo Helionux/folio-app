@@ -64,8 +64,8 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
         scrolled
-          ? "border-b border-border/60 bg-background/80 backdrop-blur-xl"
-          : "bg-transparent"
+          ? "border-b border-border/60 bg-card"
+          : "bg-card"
       )}
     >
       <nav
@@ -112,7 +112,7 @@ export function Navbar() {
 
           <Button
             variant="ghost"
-            size="icon"
+            size="lg"
             className="md:hidden"
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}

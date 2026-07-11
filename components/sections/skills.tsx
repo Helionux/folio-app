@@ -1,7 +1,6 @@
-
 import { FadeIn } from "@/components/ui/fade-in"
 import { SectionHeading } from "@/components/ui/section-heading"
-import {  softSkills } from "@/lib/data"
+import { softSkills } from "@/lib/data"
 import { ChartSkill } from "./ChartSkill"
 
 export function Skills() {
@@ -16,7 +15,7 @@ export function Skills() {
           />
         </FadeIn>
 
-        <div className="grid gap-12 lg:grid-cols-2">
+        <div className="w-full grid gap-12 lg:grid-cols-2">
           <div>
             <FadeIn delay={100}>
               <h3 className="mb-6 font-mono text-xs tracking-widest text-muted-foreground uppercase">
@@ -44,33 +43,6 @@ export function Skills() {
               </h3>
             </FadeIn>
             <div className="space-y-4">
-              {/* {hardSkills.map((skill, i) => (
-                <FadeIn key={skill.name} delay={150 + i * 60}>
-                  <div>
-                    <div className="mb-1.5 flex items-center justify-between">
-                      <span className="text-sm">{skill.name}</span>
-                      <span className="font-mono text-xs text-muted-foreground">
-                        {skill.level}%
-                      </span>
-                    </div>
-                    <div className="h-1.5 overflow-hidden rounded-full bg-muted">
-                      <div
-                        className={cn(
-                          "h-full rounded-full bg-primary transition-all duration-1000 ease-out",
-                          "w-0 [transition-delay:200ms] group-data-[visible=true]:w-full"
-                        )}
-                        style={
-                          {
-                            width: `${skill.level}%`,
-                            "--skill-width": `${skill.level}%`,
-                          } as CSSProperties
-                        }
-                      />
-                    </div>
-                  </div>
-                </FadeIn>
-              ))} */}
-
               <ChartSkill />
             </div>
           </div>
